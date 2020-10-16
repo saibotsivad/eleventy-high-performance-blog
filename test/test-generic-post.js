@@ -3,8 +3,8 @@ const expect = require("expect.js");
 const { JSDOM } = require("jsdom");
 const readFileSync = require("fs").readFileSync;
 const existsSync = require("fs").existsSync;
-const metadata = require("../_data/metadata.json");
-const GA_ID = require("../_data/googleanalytics.js")();
+const metadata = require("../src/_data/metadata.json");
+const GA_ID = require("../src/_data/googleanalytics.js")();
 
 /**
  * These tests kind of suck and they are kind of useful.
@@ -15,7 +15,7 @@ const GA_ID = require("../_data/googleanalytics.js")();
 
 describe("check build output for a generic post", () => {
   describe("sample post", () => {
-    const POST_FILENAME = "_site/posts/firstpost/index.html";
+    const POST_FILENAME = "src/_site/posts/firstpost/index.html";
     const URL = metadata.url;
     const POST_URL = URL + "/posts/firstpost/";
 
