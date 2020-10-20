@@ -15,7 +15,7 @@ const GA_ID = require("../src/_data/googleanalytics.js")();
 
 describe("check build output for a generic post", () => {
   describe("sample post", () => {
-    const POST_FILENAME = "src/_site/posts/firstpost/index.html";
+    const POST_FILENAME = "_site/posts/firstpost/index.html";
     const URL = metadata.url;
     const POST_URL = URL + "/posts/firstpost/";
 
